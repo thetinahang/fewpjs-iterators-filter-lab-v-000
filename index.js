@@ -4,3 +4,7 @@ const findMatching = (drivers, string) => {
     return d.toUpperCase() == string.toUpperCase();
   })
 }
+
+const fuzzyMatch = (drivers, string) => {
+  return drivers.filter( d => d.startsWith(string))
+}
