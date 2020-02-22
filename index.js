@@ -10,5 +10,5 @@ const fuzzyMatch = (drivers, string) => {
 }
 
 const matchName = (drivers, string) => {
-  return drivers.filter( d => d.nmme == string)
+  return drivers.filter( d => d.name == string)
 }
