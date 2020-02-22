@@ -8,3 +8,7 @@ const findMatching = (drivers, string) => {
 const fuzzyMatch = (drivers, string) => {
   return drivers.filter( d => d.startsWith(string))
 }
+
+const matchName = (drivers, string) => {
+  return drivers.filter( d => d.nmme == string)
+}
